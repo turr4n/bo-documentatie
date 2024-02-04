@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webcam Foto App</title>
+    <script src="app.js" defer></script>
+    <style>
+      #countdown {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 100px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 10;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <video id="camera" autoplay></video>
+    <canvas id="canvas" style="display: none"></canvas>
+    <button id="takePhotoButton">Maak Foto</button>
+    <button id="savePhotoButton" style="display: none">Bewaar Foto</button>
+    <button id="retryButton" style="display: none">Probeer Opnieuw</button>
+    <div id="countdown"></div>
+  </body>
+</html>
